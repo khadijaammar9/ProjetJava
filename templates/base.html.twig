@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Polytech Job{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u " crossorigin="anonymous"/>
+
+        {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}" />
+        {% endblock %}
+
+        
+    </head>
+    <body>
+        <img src="{{asset('images/pic.jpeg')}}" title="my image" alt="My image"
+        width="150" height="150">
+<h1 class="text-center">{% block titre%}Bienvenue a Polytech Job Search {% endblock %}</h1>
+        {% block body %}{% endblock %}
+    </body>
+</html>
